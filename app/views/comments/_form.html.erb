@@ -1,0 +1,8 @@
+<form ng-submit = "AddComment(task)">
+	<p class="input-group">
+		<input type = "text" class="form-control comment_content" placeholder="Start typing here to add a comment..." ng-model = "newComment.content[task.id]" ng-minlength="1" required>
+		<span class="input-group-btn">
+			<button class="btn btn-default" type = "submit">Add Comment</button>
+		</span>
+	</p>
+</form>

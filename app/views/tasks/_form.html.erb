@@ -1,0 +1,18 @@
+<div class="edit_task_fields">
+	<form ng-submit = "EditTask(task)">
+		<input class="form-control edit_task_name" type = "text" placeholder="{{task.name}}" ng-model = "editTask.name[task.id]">
+		<div class="row task_group">
+			<div class="col-lg-11">
+				<p class="input-group">
+					<input type="text" class="form-control" ng-model="editTask.deadline" ui-date="{ dateFormat: 'dd.mm.yy', minDate: 0 }" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default disabled" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			</div>
+			<div class="col-lg-1">
+				<input type = "submit" value = "Edit Task" class="btn btn-primary">
+			</div>
+		</div>
+	</form>
+</div>

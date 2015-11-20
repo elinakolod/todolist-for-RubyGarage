@@ -1,0 +1,8 @@
+<ul class="task_comments">
+	<li ng-repeat = "comment in task.comments">
+		<span>{{comment.content}}</span>
+		<span class = "destroy_comment" ng-click="DestroyComment(comment, task)">
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+		</span>
+	</li>
+</ul>

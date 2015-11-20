@@ -1,0 +1,12 @@
+<div class="attachment-wrap">
+	<center><div class="button btn btn-primary select_files" ngf-select="upload($files, task)" ngf-multiple="true">Select&nbsp;*.jpg, *.png, *.gif</div></center>
+	<div class = "file-wrap{{task.id}}" ng-repeat = "file in task.attachments">
+		<div class="img-wrap pull-left">
+			<span class = "destroy_attachment" ng-click="DestroyAttachment(file, task)">
+				<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			</span>
+			<img ng-src="{{file.file.thumb.url}}"> 
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
